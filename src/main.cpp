@@ -160,7 +160,7 @@ void handleTmrNetworkOverseer()
       if (tmrNetworkOverseer.counter() > overseerMaxRetry)
       {
         DEBUG_PRINTLN(F("LAN counter overflow"));
-        startAP(true);
+        // startAP(true);
       }
     }
     break;
@@ -185,7 +185,7 @@ void handleTmrNetworkOverseer()
           else
           {                            // no network interfaces
             tmrNetworkOverseer.stop(); // stop timer
-            startAP(true);
+            // startAP(true);
           }
         }
       }
